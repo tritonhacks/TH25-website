@@ -3,6 +3,7 @@ import Landing from "./components/Landing";
 import FAQ from "./components/FAQ";
 import Sponsors from "./components/Sponsors";
 import Contact from "./components/Contact";
+import About from "./components/About";
 import React from 'react';
 
 const App = () => {
@@ -13,8 +14,9 @@ const App = () => {
         <Landing />
       </div>
       <div className="section2">
-        <Sponsors />
+        <About />
         <FAQ />
+        <Sponsors />
         <Contact />
       </div>
     </div>

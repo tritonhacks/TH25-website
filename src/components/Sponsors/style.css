@@ -1,23 +1,18 @@
 #sponsors-wrapper {
+    position: relative;
+    background-color:  #32111A;
     color: var(--white);
-    margin-top: -5px;
-    margin-bottom: 120vh;
+    z-index: 10;
+    margin-top: -20vh;
 }
 
-#bottle {
-    position: absolute;
-    left: 0%;
-    width: 35vw;
-    z-index: 0;
-}
 
 .rightText {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 55%;
-    padding-left: 35%;
-    margin-top: -50rem;
+    align-items: center;
+    width: 100%;
 }
 
 #sponsors {
@@ -25,9 +20,6 @@
     line-height: 2rem;
     text-transform: uppercase;
     text-align: center;
-    margin-left: 0;
-    margin-bottom: 5rem;
-    padding-top: 2rem;
 }
 
 #sponsor-us {
@@ -40,9 +32,10 @@
 #dei {
     font-size: 1.25rem;
     text-align: center;
-    margin: 8rem;
+    margin: 4rem;
     font-family: 'Abel';
     font-style: italic;
+    padding: 0 40vh;
 }
 
 #email {
@@ -55,20 +48,17 @@
 
 #sponsor-images {
     position: relative;
-    width: 20vw;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-content: center;
     align-items: center;
-    text-align: center;
-    margin: 0 8rem;
-    padding: 18rem 0 0 0;
 }
 
 #sponsor-images img {
     height: auto;
-    max-width: 6rem;
-    margin: .5rem;
+    max-width: 10rem;
+    margin: 0rem 2rem;
+    margin-bottom: 4rem;
     cursor: pointer;
     z-index: 1;
 }
@@ -82,9 +72,6 @@
 }
 
 @media (max-width: 1180px) {
-    #sponsors-wrapper {
-        margin-bottom: 60vw;
-    }
 
     #sponsor-images img {
         max-width: 4.5rem;
@@ -92,7 +79,6 @@
 
     #sponsor-images {
         margin: 0 7rem;
-        padding: 18rem 0 0 0;
     }
 }
 
@@ -107,7 +93,7 @@
     }
 
     #sponsors {
-        padding-top: 20vw;
+        padding-top: 20vh;
     }
 }
 

@@ -1,13 +1,25 @@
-/* import fonts */
-@import url('https://fonts.googleapis.com/css2?family=Abel&family=Dokdo&display=swap');
-
 /* colors */
 :root {
-  --forest-green: #ABC0B9;
-  --dark-green: #2D5855;
+  --bright-yellow: #FFC808;
+  --red: #DF1F26;
+  --dark: #9D0208;
+  --orange: #E85D04;
+  --crimson: #6A040F;
   --white: #FFFFFF;
   --gray: #020202;
   --black: #0F0237;
+}
+
+@font-face {
+  font-family: "Muro";
+  src: url("../src/assets/fonts/Muro.ttf") format('truetype'),
+       url("../src/assets/fonts/Muro.woff") format('woff');
+}
+
+@font-face {
+  font-family: "Muroslant";
+  src: url("../src/assets/fonts/Muroslant.ttf")  format('truetype'),
+       url("../src/assets/fonts/Muroslant.woff") format('woff');
 }
 
 html,
@@ -17,13 +29,13 @@ body {
   scroll-padding-top: 18vh;
   scroll-behavior: smooth;
   overflow-x: hidden;
-  background: var(--forest-green);
+  background: var(--white);
   width: 100vw;
 }
 
 * {
   font-family: Arial, sans-serif;
-  font-family: "Dokdo";
+  font-family: "Muro";
 }
 
 a {
@@ -41,3 +53,16 @@ a {
 .section2 {
   margin-top: -50px;
 }
+
+.enlarge-text {
+  display: block; /* important for transform to work correctly */
+  transition: transform 0.2s ease; /* smooth animation */
+}
+
+.enlarge-text:hover {
+  transform: scale(1.05); /* slightly enlarge by 5% */
+}
+
+/* img {
+  -webkit-user-drag: none;
+} */

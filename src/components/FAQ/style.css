@@ -1,65 +1,71 @@
 #faq {
-    margin: 10vw 0;
+    margin: 10vh 0;
+    background-color: var(--white);
+}
+
+#faq-header {
+    position: relative;
+    z-index: 0;
 }
 
 #faq-title {
-    color: var(--white);
+    position: relative;
+    color: var(--orange);
     font-size: 8rem;
-    margin: 0 50vw 0 10vw;
-    text-align: center;
-    line-height: 8rem;
+    text-align: right;
     text-transform: uppercase;
+    z-index: 10;
+    margin: 0 25vw;
+    margin-top: -80vh;
+    padding: 8rem 8rem;
 }
 
-#compass {
+#firstAid {
     position: absolute;
+    top: 0;
+    left: -13vw;
     right: 0%;
-    margin-top: -30vw;
-    width: 35vw;
+    width: 206vw;
+    z-index: -1;
+    margin: 30vh 0;
 }
 
 #questions {
-    margin: 5rem 6rem;
+    margin: 15rem 6.25rem;
+    z-index: 12;
+    padding-right: 40rem;
 }
 
 .question {
     display: flex;
-    color: var(--white);
-    align-items: center;
-    font-size: 5rem;
+    color: #FFC808;
+    align-items: left;
+    font-size: 4.5rem;
+    z-index: 10;
 }
 
 .question p {
-    margin: 1rem 2rem;
+    margin: 2rem 0rem;
+    
 }
 
 .answer,
 .answer b {
     color: var(--white);
     font-size: 1.75rem;
-    line-height: 2.25rem;
+    line-height: 2rem;
     font-family: 'Nanum Gothic', sans-serif;
 }
 
 .answer {
-    margin: 1rem 2rem;
+    margin: 1rem 0rem;
 }
 
-#hackAnswer {
-    margin-right: 30rem;
-}
+
 
 @media (max-width: 1180px) {
     #faq-title {
-        font-size: 7rem;
-    }
-
-    #compass {
-        margin-top: -50vw;
-    }
-
-    #hackAnswer {
-        margin-right: 0;
+        font-size: 8rem;
     }
 }
 
@@ -147,7 +153,6 @@
     .question {
         font-size: 2rem;
         line-height: 1.75rem;
-
     }
 
 }

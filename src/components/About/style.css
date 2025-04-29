@@ -1,16 +1,44 @@
+#extinguisher {
+    position: relative;
+    left: 35vw;
+    right: 0%;
+    margin-top: -175vh;
+    width: 40vw;
+    z-index: 4;
+}
+
+
 #about-wrapper {
-    margin: -30px 0;
-    padding-bottom: 20px;
+    position: relative;
+    margin-top: -30vh;
+    margin-bottom: 10vh;
 }
 
 #about-content {
-    margin: 0 7rem;
-    padding-top: 20px;
+    margin: 0 12.5rem;
+    padding-top: 2.5rem;
+    z-index: 100;
+    color:black;
+}
+
+#flex-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+}
+
+#about-title {
+    color: #DF1F26;
+    padding-top: 5rem;
+    margin-top: -2vh;
+    font-size: 8rem;
+    text-align: left;
+    text-transform: uppercase;
 }
 
 #about {
     font-size: 6rem;
-    color: var(--black);
     margin-bottom: 0;
     margin-left: 0;
     text-align: center;
@@ -19,24 +47,37 @@
 #about-paragraph {
     font-size: 1.85rem;
     font-family: "Nanum Gothic", sans-serif;
-    text-align: center;
+    text-align: left;
     line-height: 3.0rem;
+    padding-right: 40vw;
 }
 
-#learn-more a {
-    font-family: "Cute Font", cursive;
-    font-size: 3rem;
-    color: var(--black);
+#about-paragraph i {
+    font-size: 1.85rem;
+    font-family: "Nanum Gothic", sans-serif;
+    text-align: left;
+    line-height: 3.0rem;
+    padding-right: 40vw;
     text-decoration: underline;
 }
 
-#learn-more {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 3rem;
-    font-family: "Cute Font", cursive;
+#about-paragraph a:hover {
+    transform:scale(2rem);
 }
+
+#learn-more a {
+    font-family: "Nanum Gothic", sans-serif;
+    font-size: 3rem;
+    color: var(--black);
+    
+}
+
+#learn-more {
+    font-size: 3rem;
+    font-family: "Nanum Gothic", sans-serif;
+    margin: 5rem 0;
+}
+
 
 @media (max-width: 820px) {
     #about {
@@ -67,18 +108,41 @@
     #learn-more a {
         font-size: 1.75rem;
     }
-
-    .arrow {
-        width: 20px;
-    }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 360px) {
+  
+    #about-title {
+        color: #DF1F26;
+        margin-top: -30vh;
+        font-size: 5rem;
+        text-transform: uppercase;
+    }
+    #about-content {
+        padding-top: 2.5rem;
+        z-index: 100;
+        color:black;
+    }
+    #about-paragraph{
+        font-size: 1rem;
+        font-family: "Nanum Gothic", sans-serif;
+        text-align: center;
+        line-height: 1.5rem;
+    }
+
+    #about-paragraph i {
+        font-size: 1rem;
+        font-family: "Nanum Gothic", sans-serif;
+        text-align: center;
+        line-height: 1.5rem;
+        text-decoration: underline;
+    }
+
     #learn-more,
     #learn-more a {
         font-size: 1.5rem;
     }
     #about-wrapper {
-    margin: -20px 0;
+    margin: 5vh 0;
 }
 }

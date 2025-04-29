@@ -1,8 +1,47 @@
 #landing-wrapper {
-  padding-top: 10vh;
-  margin-bottom: 20vw;
-  min-height: max(700px, 100vh);
-  background: linear-gradient(348deg, #FFEABB 55.95%, rgba(16, 113, 81, 0.01) 133.72%);
+  position: relative;
+  z-index: 0;
+  margin-bottom: 20vh;
+}
+
+#clouds {
+  width: 100%;
+  z-index: 12;
+  position: absolute; /* THIS is the key */
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+#sky-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 0;
+}
+
+#skyline {
+  margin-top: -8rem;
+  width: 100vw;
+  z-index: 1;
+  position: absolute;
+}
+
+#frontskyline {
+  margin-top: -5rem;
+  width: 110vw;
+  z-index: 4;
+  position: absolute;
+}
+
+#buildings {
+  top: -15vh;
+  width: 100vw;
+  z-index: 5;
+  position: relative;
 }
 
 /* Foreground = text, buttons, non-animated elements */
@@ -12,22 +51,22 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 15rem 0;
+  padding: 20rem 0;
 }
 
 #landing-title {
   margin: 0;
   color: var(--white);
   font-size: 10rem;
-  line-height: 2rem;
+  line-height: 3rem;
   letter-spacing: 0.25rem;
   text-transform: uppercase;
   position: fixed;
 }
 
 #landing-date {
-  margin-top: 18rem;
-  color: var(--dark-green);
+  margin-top: 16rem;
+  color: var(--white);
   font-size: 3.5rem;
   line-height: 2rem;
   letter-spacing: 0.25rem;
@@ -40,13 +79,12 @@
 }
 
 #landing-text {
-  margin-bottom: -25vw;
+  margin-bottom: -25vh;
 }
 
 #landing-btn-wrapper {
   position: relative;
-  top: -13vw;
-  left: 61vw;
+  left: 50%
 }
 
 .landing-btn {
@@ -65,19 +103,20 @@
 }
 
 #countdown-text {
-  position: relative;
-  top: -95.5vw;
-  left: 8.5vw;
-  font-size: 1.5rem;
+  position: absolute;
+  top: 50vh;
+  left: 78vw;
+  font-size: 4rem;
   text-transform: uppercase;
+  z-index: 10;
 }
 
 #timer {
   display: grid;
   align-items: center;
-  grid-template-rows: 4rem 4rem 4rem 4rem;
-  width: 15vw;
-  color: var(--white);
+  grid-template-rows: 6rem 6rem 6rem 6rem;
+  width: 20vw;
+  color: var(--orange);
 }
 
 #timer p {
@@ -116,239 +155,131 @@
   grid-area: 4 / 2;
 }
 
-#mountains {
-  margin-top: -5rem;
-  width: 100vw;
+@media (min-width: 1920px) {
+  #landing-wrapper {}
+  #landing-bg {}
+  #landing-text {}
+  #landing-fg {}
+  #landing-title {}
+  #landing-date {}
+  #landing-btn-wrapper { left: 59vw; }
+  .landing-btn {}
+  #countdown-text { font-size: 4rem; transform: translateY(50vh); padding-top: 10vh; }
+  #timer {grid-template-rows: 4rem 4rem 4rem 4rem; }
 }
 
-#river {
-  margin-top: -80rem;
-  margin-bottom: -10px;
-  width: 100vw;
-}
-
-@media (min-width: 1800px) {
-  #landing-wrapper {
-    margin-top: 5vw;
-  }
-
-  #landing-bg {
-    position: relative;
-    top: -30vh;
-  }
-
-  #landing-text {
-    margin-bottom: -35vw;
-  }
-
-  .timer-element p {
-    margin: 25px;
-  }
-
-  #countdown-text {
-    top: -85vw;
-  }
-
-  #landing-btn-wrapper {
-    top: -3vw;
-    left: 65vw;
-  }
-}
-
-@media (max-width: 1350px) {
-  #countdown-text {
-    top: -96vw;
-    left: 8vw;
-  }
-
-  #timer {
-    grid-template-rows: 3.5rem 3.5rem 3.5rem 3.5rem;
-  }
-
-  #landing-fg {
-    padding: 20vw 0 55vw;
-  }
-
-  #landing-title {
-    font-size: 8rem;
-  }
-
-  #landing-date {
-    margin-top: 15rem;
-    font-size: 3rem;
-  }
-
-  #landing-btn-wrapper {
-    left: 58vw;
-  }
-}
-
-@media (max-width: 1180px) {
-  #landing-fg {
-    padding: 20vw 0 55vw;
-  }
-
-  #countdown-text {
-    font-size: 1.25rem;
-    left: 8.75vw;
-  }
-
-  #landing-title {
-    font-size: 8em;
-  }
-
-  .landing-btn {
-    font-size: 4rem;
-  }
-
-  #landing-btn-wrapper {
-    left: 59vw;
-  }
-
+@media (max-width: 1920px) {
+  #landing-wrapper {}
+  #landing-bg {}
+  #landing-text {}
+  #landing-fg {}
+  #landing-title {}
+  #landing-date {}
+  #landing-btn-wrapper { left: 59vw; }
+  .landing-btn {}
+  #countdown-text { font-size: 3.5rem; transform: translateY(30vw); padding-top: 10vh; }
+  #timer {grid-template-rows: 4rem 4rem 4rem 4rem; }
 }
 
 @media (max-width: 1080px) {
-  #landing-fg {
-    padding: 20vw 0 65vw;
+  #landing-wrapper {}
+  #landing-bg {}
+  #landing-text {}
+  #landing-fg {}
+  #landing-title {}
+  #landing-date {}
+  /* #landing-btn-wrapper { left: 56vw; } */
+  .landing-btn {}
+  #countdown-text { font-size:2rem; transform: translateY(30vw); padding-top: 10vh; 
   }
-
-  #countdown-text {
-    font-size: 1rem;
-    top: -96.5vw;
-  }
-
-  #landing-btn-wrapper {
-    left: 56vw;
-  }
-
-  #timer {
-    grid-template-rows: 3rem 3rem 3rem 3rem;
-  }
+  #timer { grid-template-rows: 3rem 3rem 3rem 3rem; }
 }
 
 @media (max-width: 972px) {
-  #landing-fg {
-    padding: 20vw 0 80vw;
-  }
-
-  #countdown-text {
-    top: -97vw;
-  }
-
-  .landing-btn {
-    font-size: 3rem;
-  }
-
+  #landing-title { font-size: 8rem; }
 }
 
 @media (max-width: 820px) {
-  #landing-wrapper {
-    margin-bottom: -50vw;
-  }
+  #landing-wrapper { margin-bottom: 20vh;}
+  #landing-bg {padding-bottom: 7vh;}
+  #landing-text {}
+  #landing-fg {padding: 20rem 0;}
+  #landing-title { font-size: 7rem; margin-bottom: 10vh; }
+  #landing-date { margin-top: 5rem;
+    color: var(--white);
+    font-size: 2rem;
+    line-height: 2rem;
+    letter-spacing: 0.25rem;
+    text-transform: uppercase;
+    position: fixed; }
+  #countdown-text {font-size:2rem; transform: translateY(40vw); padding-top: 10vh;}
+  #timer {  grid-template-rows: 3rem 3rem 3rem 3rem;  }
+}
 
-  #landing-fg {
-    padding: 20vw 0 100vw;
-  }
-
-  #timer {
-    grid-template-rows: 2.5rem 2.5rem 2.5rem 2.5rem;
-    font-size: 1rem;
-  }
-
-  #landing-title {
-    font-size: 5rem;
-  }
-
-  #landing-date {
-    font-size: 2.5rem;
-  }
-
-  .landing-btn {
-    font-size: 2.5rem;
-  }
-
-  #landing-btn-wrapper {
-    left: 54vw;
-  }
+@media (max-width: 500px) {
+  #landing-wrapper {}
+  #landing-bg {}
+  #landing-text {}
+  #landing-fg {}
+  #landing-title { font-size: 3.5rem; }
+  #landing-date { margin-top: 8rem; font-size: 1.5rem; }
+  #landing-btn-wrapper { left: 39vw; top: -15vw; }
+  .landing-btn { font-size: 1.5rem; }
+  #countdown-text {transform: translateY(20vw); padding-top: 50vw; }
+  #timer {  width: 30vw; font-size: 3rem; transform: translateX(-45vw); grid-template-rows: 3rem 3rem 3rem 3rem; }
 }
 
 @media (max-width: 768px) {
-  #landing-fg {
-    padding: 20vw 0 120vw;
-  }
-
-  #timer {
-    grid-template-rows: 2.25rem 2.25rem 2.25rem 2.25rem;
-    font-size: .75rem;
-  }
-
+  #landing-wrapper {padding-bottom: 10vh;}
+  #landing-bg {}
+  #landing-text {}
+  #landing-fg {}
   #landing-title {
-    font-size: 5rem;
+    margin: 0;
+    color: var(--white);
+    font-size: 3.5rem;
+    line-height: 1rem;
+    letter-spacing: 0.25rem;
+    text-transform: uppercase;
+    position: fixed;
   }
-
-  #landing-date {
-    font-size: 2rem;
-  }
-
-  #landing-btn-wrapper {
-    left: 53vw;
+  #landing-date { font-size: 1.5rem; margin-top: 6rem; }
+  #landing-btn-wrapper {}
+  .landing-btn {}
+  #countdown-text {}
+  #timer { font-size: 1.75rem; grid-template-rows: 2.25rem 2.25rem 2.25rem 2.25rem; }
+  #clouds {
+    transform: translateY(-2rem);
   }
 }
 
 @media (max-width: 480px) {
-  #landing-fg {
-    padding: 20vw 0 150vw;
-  }
+  #landing-wrapper {}
+  #landing-bg {}
+  #landing-text {}
+  #landing-fg {}
+  #landing-title { font-size: 3.5rem; }
+  #landing-date { margin-top: 8rem; font-size: 1.5rem; }
+  #landing-btn-wrapper { left: 39vw; top: -15vw; }
+  .landing-btn { font-size: 1.5rem; }
+  #countdown-text {transform: translateY(50vw); padding-top: 30vw; }
+  #timer {  width: 30vw; font-size: 1.5rem; transform: translateX(-45vw);grid-template-rows: 2rem 2rem 2rem 2rem; }
+}
 
-  #landing-title {
-    font-size: 3rem;
-  }
 
-  #landing-date {
-    margin-top: 8rem;
-    font-size: 1.5rem;
-  }
-
-  #timer {
-    grid-template-rows: 1.25rem 1.25rem 1.25rem 1.25rem;
-    font-size: .5rem;
-  }
-
-  #countdown-text {
-    top: -100vw;
-  }
-
-  .landing-btn {
-    font-size: 1.5rem;
-  }
-
-  #landing-btn-wrapper {
-    left: 39vw;
-    top: -15vw;
-  }
-  
-  #river {
-    margin-bottom: -5vw;
+@media (max-width: 360px) {
+  #landing-wrapper {}
+  #landing-bg {}
+  #landing-text {}
+  #landing-fg {}
+  #landing-title { font-size: 2rem; }
+  #landing-date { margin-top: 5rem; font-size: 1rem; }
+  #landing-btn-wrapper { left: 39vw; top: -15vw; }
+  .landing-btn { font-size: 1.5rem; }
+  #countdown-text {transform: translateY(50vw); padding-top: 10vh; }
+  #timer {  width: 30vw; font-size: 1.25rem; transform: translateX(-45vw); grid-template-rows: 1.5rem 1.5rem 1.5rem 1.5rem; }
+  #clouds {
+    transform: translateY(-5rem);
   }
 }
 
-@media (max-width: 390px) {
-  #landing-date {
-    margin-top: 8rem;
-    font-size: 1rem;
-  }
-
-  #countdown-text {
-    top: -99vw;
-  }
-
-  #timer {
-    grid-template-rows: 1.25rem 1rem 1.25rem 1.25rem;
-    font-size: .4rem;
-  }
-
-  #landing-btn-wrapper {
-    left: 35vw;
-    top: -13vw;
-  }
-}

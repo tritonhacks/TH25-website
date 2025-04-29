@@ -8,12 +8,12 @@
     z-index: 20;
     transition: all .2s ease-in;
     font-size: 2rem;
-      background: linear-gradient(348deg, #cfba8b 55.95%, rgba(16, 113, 81, 0.01) 133.72%);
+      background: linear-gradient(348deg, #FFC808 0%, #DF1F26 77%, #690B14 133.332%);
 
 }
 
 .scrolled {
-    background-color: var(--dark-green);
+    background-color: var(--red);
 }
 
 .navbar-links {
@@ -42,7 +42,7 @@
 }
 
 .hamburger:hover {
-    background-color: var(--purple);
+    background-color: var(--red);
 }
 
 .navbar-title,
@@ -64,6 +64,7 @@
     height: 4.5rem;
     width: 4.5rem;
     margin: 1rem 0;
+    
 }
 
 .underline {
@@ -73,7 +74,7 @@
 }
 
 .underline:hover {
-    color: white;
+    color: var(--white);
 }
 
 
@@ -96,9 +97,32 @@
 }
 
 @media (max-width: 820px) {
+   
     .navbar-container {
         margin-bottom: -1rem;
     }
+}
+
+@media (max-width: 768px) {
+   
+    .navbar-container {
+        margin-bottom: -1rem;
+    }
+    .underline {
+        font-size: 1.5rem;
+    }
+
+    .navbar-title,
+    .navbar-links a {
+        margin: 0 .75rem;
+    }
+
+    .nav-menu {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
 }
 
 @media (max-width: 480px) {
@@ -119,8 +143,8 @@
 
 @media (max-width: 375px) {
     .navbar-container {
-        min-height: 13vh;
+        min-height: 5vh;
         padding: 1rem;
-        padding-top: 1.5rem;
+        padding-top: 0.5rem;
     }
 }

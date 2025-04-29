@@ -1,5 +1,14 @@
 #footer {
-  margin-top: 10rem;
+  background-color: #32111A;
+  width: 100%;
+}
+
+.contact-flex-wrapper {
+  display: flex;
+  gap: 2vw;
+  align-items: center;
+  justify-content: center; /* optional, to center them nicely */
+  padding: 2vw 0vw;         /* give enough breathing room on both sides */
 }
 
 #content {
@@ -9,26 +18,28 @@
 
 #contact {
   font-size: 8rem;
-  margin-left: 8vh;
+  /* margin-left: 8vh; */
   margin-bottom: 0;
   text-transform: uppercase;
 }
 
 #walkietalkie {
-  position: absolute;
-  left: 0%;
-  height: 55vw;
-  margin-top: -5vw;
+  position: relative;
+  width: 100vw;
+  height: auto;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 
 #text {
   display: flex;
   flex-direction: column;
-  padding: 5vh 8vh 5vh;
+  padding: 3vh 3vw;
+ 
   justify-content: center;
   align-items: center;
-  width: 60vw;
-  padding-left: 35vw;
+  width: 100vw;
+  /* width: 60vw; */
 }
 
 .sec {
@@ -52,10 +63,14 @@
   text-decoration: underline;
 }
 
-#mail {
+#mail  {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#mail a {
+  color: white;
 }
 
 #icon-box {

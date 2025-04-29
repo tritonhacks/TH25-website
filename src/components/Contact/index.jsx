@@ -1,5 +1,5 @@
 import "./style.css";
-import walkietalkie from "../../assets/walkie_talkie.svg";
+import traffic from "../../assets/Traffic Cone.svg";
 import facebook from "../../assets/fb.svg";
 import instagram from "../../assets/insta.svg";
 // import discord from "../../assets/discord.svg";
@@ -11,8 +11,9 @@ const Contact = () => {
     return (
         <section id="footer">
             <div id="content">
-                <img src={walkietalkie} alt="walkietalkie" id="walkietalkie"/>
+                <div className="contact-flex-wrapper">
 
+                <img src={traffic} alt="walkietalkie" id="walkietalkie"/>
                 <div id="text">
                     <h1 id="contact">Over and out</h1>
 
@@ -21,7 +22,7 @@ const Contact = () => {
                         <p>Contact Our Team</p>
                         <div id="mail">
                             <img className="footer-icon" src={mail} alt="email" />
-                            <a href="mailto:tritonhacks@gmail.com" target="_blank" rel="noreferrer" className="icon">tritonhacks@gmail.com</a>
+                            <a href="mailto:tritonhacks@gmail.com" target="_blank" rel="noopener noreferrer" className="icon">tritonhacks@gmail.com</a>
                         </div>
                     </div>
                     <div class="sec">
@@ -31,7 +32,7 @@ const Contact = () => {
                             <a
                                 href="https://www.facebook.com/triton.hacks"
                                 target="_blank"
-                                rel="noreferrer"
+                                rel="noopener noreferrer"
                                 className="icon"
                             >
                                 <img className="footer-icon" src={facebook} alt="facebook" />
@@ -39,7 +40,7 @@ const Contact = () => {
                             <a
                                 href="https://www.instagram.com/ucsdtritonhacks/"
                                 target="_blank"
-                                rel="noreferrer"
+                                rel="noopener noreferrer"
                                 className="icon"
                             >
                                 <img className="footer-icon" src={instagram} alt="instagram" />
@@ -53,15 +54,16 @@ const Contact = () => {
                                 <img className="footer-icon" src={discord} alt="discord" />
                             </a> */}
                             <a
-                                href="https://csforeach.ucsd.edu/"
+                                href="https://csforeach.org/"
                                 target="_blank"
-                                rel="noreferrer"
+                                rel="noopener noreferrer"
                                 className="icon"
                             >
                                 <img className="footer-icon" src={csfe} alt="cs foreach" />
                             </a>
                         </div>
                     </div>
+                </div>
                 </div>
             </div>
         </section>
