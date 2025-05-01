@@ -12,7 +12,7 @@ const Contact = () => {
         <section id="footer">
             <div id="content">
                 <div className="contact-flex-wrapper">
-
+                <div className="contact-stack">
                 <img src={traffic} alt="walkietalkie" id="walkietalkie"/>
                 <div id="text">
                     <h1 id="contact">Over and out</h1>
@@ -63,6 +63,7 @@ const Contact = () => {
                             </a>
                         </div>
                     </div>
+                </div>
                 </div>
                 </div>
             </div>

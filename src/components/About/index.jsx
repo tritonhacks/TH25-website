@@ -6,10 +6,10 @@ import clouds from "../../assets/Clouds.svg"
 const About = () => {
     return (
         <section id="about-wrapper">
-             {/* <img src={clouds} alt="clouds" id="clouds" /> */}
             <div id="about-content">
                 <div id="about">
-                    <div class="flex-wrapper">
+                    <div className="flex-wrapper">
+                        <div className="about-text">
                     <h1 id="about-title">ABOUT</h1>
                     <p id="about-paragraph">
                         TritonHacks is a two-day high school level hackathon aimed at 
@@ -26,6 +26,7 @@ const About = () => {
                         Learn more about our other events <a href="https://csforeach.org/"><i>here!</i></a>
                         <svg>...</svg>
                         </p>
+                        </div>
                     <img src={extinguisher} alt="extinguisher" id="extinguisher" />
                     </div>
                     

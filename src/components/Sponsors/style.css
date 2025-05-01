@@ -3,7 +3,6 @@
     background-color:  #32111A;
     color: var(--white);
     z-index: 10;
-    margin-top: -20vh;
 }
 
 
@@ -78,7 +77,8 @@
     }
 
     #sponsor-images {
-        margin: 0 7rem;
+        margin-left:7rem;
+        margin-right:7rem;
     }
 }
 
@@ -89,75 +89,85 @@
 
     #sponsor-images {
         margin: 0 6rem;
-        padding: 15rem 0 0 0;
     }
 
-    #sponsors {
-        padding-top: 20vh;
-    }
+    
 }
 
 @media (max-width: 820px) {
+
+    
     #sponsor-images img {
-        max-width: 3rem;
-    }
-
-    #sponsor-images {
-        margin: 0 5rem;
-        padding: 10rem 0 0 0;
-    }
-
-    #sponsors-wrapper {
-        margin-top: 70vw;
-        margin-bottom: 30vh;
+        max-width: 4rem;
+        margin: .5rem;
     }
 
     #sponsors {
+        font-size: 7rem;
+        margin-bottom: 3vh;
+    }
+
+    #sponsor-images {
+        margin: 0 3rem;
+    }
+
+    
+
+    #sponsors {
         font-size: 6rem;
-        padding-top: 40vw;
     }
 
     #sponsor-us,
     #email {
         font-size: 1.5rem;
     }
+    
+    #dei {
+        padding: 0 5vw;
+    }
+
+    #sponsor-us {
+        margin: 0 5vw;
+    }
 }
 
 @media (max-width: 480px) {
     #sponsor-images img {
-        max-width: 1rem;
-        margin: .25rem;
+        max-width: 3rem;
+        margin: .5rem;
     }
 
     #sponsor-images {
         margin: 0 2.5rem;
-        padding: 5rem 0 0 0;
-    }
-
-    #sponsors-wrapper {
-        margin-top: 60vw;
-        margin-bottom: 30vh;
     }
 
     #sponsors {
-        font-size: 2.5rem;
-        padding-top: 130vw;
-        margin-bottom: 2rem;
+        font-size: 5.5rem;
+        margin-bottom: 5vh;
     }
 
     #sponsor-us,
     #email {
         font-size: 1.25rem;
     }
+
+    #dei {
+        padding: 0 2.5vh;
+    }
 }
 
 @media (max-width: 390px) {
-    #sponsors-wrapper {
-        margin-top: 70vw;
+
+    #sponsors {
+        font-size: 4rem;
+        margin-bottom: 2vh;
     }
+
 
     #sponsor-us,
     #email {
         font-size: 1rem;
     }
+
+    
 }

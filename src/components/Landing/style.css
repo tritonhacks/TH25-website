@@ -177,7 +177,7 @@
   #landing-date {}
   #landing-btn-wrapper { left: 59vw; }
   .landing-btn {}
-  #countdown-text { font-size: 3.5rem; transform: translateY(30vw); padding-top: 10vh; }
+  #countdown-text { font-size: 3rem; transform: translateY(80vh); padding-top: 10vh; }
   #timer {grid-template-rows: 4rem 4rem 4rem 4rem; }
 }
 
@@ -190,7 +190,7 @@
   #landing-date {}
   /* #landing-btn-wrapper { left: 56vw; } */
   .landing-btn {}
-  #countdown-text { font-size:2rem; transform: translateY(30vw); padding-top: 10vh; 
+  #countdown-text { font-size:2rem; transform: translateY(70vh); padding-top: 10vh; 
   }
   #timer { grid-template-rows: 3rem 3rem 3rem 3rem; }
 }
@@ -212,7 +212,7 @@
     letter-spacing: 0.25rem;
     text-transform: uppercase;
     position: fixed; }
-  #countdown-text {font-size:2rem; transform: translateY(40vw); padding-top: 10vh;}
+  #countdown-text {font-size:2rem; transform: translateY(50vh); padding-top: 10vh;}
   #timer {  grid-template-rows: 3rem 3rem 3rem 3rem;  }
 }
 
@@ -225,7 +225,7 @@
   #landing-date { margin-top: 8rem; font-size: 1.5rem; }
   #landing-btn-wrapper { left: 39vw; top: -15vw; }
   .landing-btn { font-size: 1.5rem; }
-  #countdown-text {transform: translateY(20vw); padding-top: 50vw; }
+  #countdown-text {transform: translateY(35vh); padding-top: 50vw; }
   #timer {  width: 30vw; font-size: 3rem; transform: translateX(-45vw); grid-template-rows: 3rem 3rem 3rem 3rem; }
 }
 
@@ -246,7 +246,7 @@
   #landing-date { font-size: 1.5rem; margin-top: 6rem; }
   #landing-btn-wrapper {}
   .landing-btn {}
-  #countdown-text {}
+  #countdown-text {transform: translateY(50vh), translateX(-30vw); padding-top: 40vw; }
   #timer { font-size: 1.75rem; grid-template-rows: 2.25rem 2.25rem 2.25rem 2.25rem; }
   #clouds {
     transform: translateY(-2rem);
@@ -260,10 +260,9 @@
   #landing-fg {}
   #landing-title { font-size: 3.5rem; }
   #landing-date { margin-top: 8rem; font-size: 1.5rem; }
-  #landing-btn-wrapper { left: 39vw; top: -15vw; }
   .landing-btn { font-size: 1.5rem; }
-  #countdown-text {transform: translateY(50vw); padding-top: 30vw; }
-  #timer {  width: 30vw; font-size: 1.5rem; transform: translateX(-45vw);grid-template-rows: 2rem 2rem 2rem 2rem; }
+  #countdown-text {transform: translateY(50vh); padding-top: 40vw; }
+  #timer {  width:40vw; font-size: 1.5rem; transform: translateX(-60vw);grid-template-rows: 2rem 2rem 2rem 2rem; }
 }
 
 
@@ -276,7 +275,7 @@
   #landing-date { margin-top: 5rem; font-size: 1rem; }
   #landing-btn-wrapper { left: 39vw; top: -15vw; }
   .landing-btn { font-size: 1.5rem; }
-  #countdown-text {transform: translateY(50vw); padding-top: 10vh; }
+  #countdown-text {transform: translateY(40vh); padding-top: 10vh; }
   #timer {  width: 30vw; font-size: 1.25rem; transform: translateX(-45vw); grid-template-rows: 1.5rem 1.5rem 1.5rem 1.5rem; }
   #clouds {
     transform: translateY(-5rem);

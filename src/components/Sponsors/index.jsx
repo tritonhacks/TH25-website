@@ -1,5 +1,4 @@
 import "./style.css";
-import waterbottle from "../../assets/water_bottle.svg";
 import cseucsd from "../../assets/logos/cseucsd.png";
 
 import csfe from "../../assets/logos/csfe-logo.svg"

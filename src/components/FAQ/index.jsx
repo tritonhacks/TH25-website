@@ -20,11 +20,11 @@ const FAQ = () => {
                     programming come together to create a project in a sprint-like event!
                 </p>
                 </div>
-                <div className="faq-item">
-                <div className="question">
+                <div className="faq-item midway">
+                <div className="question midway">
                     <p>What if I don’t know anything about coding?</p>
                 </div>
-                <p className="answer">
+                <p className="answer midway">
                     No worries! Our hackathon is designed for high school students of all
                     experience levels! We have starter kits for everyone, no matter how
                     much experience you have had!
