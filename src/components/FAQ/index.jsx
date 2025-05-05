@@ -54,7 +54,8 @@ const FAQ = () => {
                         <p>What will a day at the hackathon look like?</p>
                     </div>
                     <p className="answer">
-                        While you are working to complete your project, there will be food provided, and there will be workshops and panels throughout the day to teach you valuable skills and concepts
+                        While you are working to complete your project, there will be food provided, 
+                        and there will be workshops and panels throughout the day to teach you valuable skills and concepts!
                     </p>
                 </div>
                 </div>

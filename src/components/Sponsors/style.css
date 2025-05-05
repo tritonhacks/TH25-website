@@ -91,6 +91,14 @@
         margin: 0 6rem;
     }
 
+    #dei {
+        padding: 0 5vw;
+    }
+
+    #sponsor-us {
+        margin: 0 5vw;
+    }
+
     
 }
 
@@ -110,7 +118,6 @@
     #sponsor-images {
         margin: 0 3rem;
     }
-
     
 
     #sponsors {

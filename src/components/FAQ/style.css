@@ -1,6 +1,7 @@
 #faq {
     margin-bottom: 20vh;
-    background: linear-gradient(to bottom, white 40%, #32111A 30%);
+    background: linear-gradient(to bottom, white 0%, white 60%, #32111A 60%, #32111A 100%);
+
 }
 
 #faq-header {
@@ -71,22 +72,61 @@
 }
 
 
-
-@media (max-width: 1180px) {
+@media (min-width: 1180px) {
     #faq-title {
         font-size: 8rem;
+    }
+
+
+    .question {
+        font-size: 3rem;
+    }
+
+    #questions {
+        margin-top: 10vh;
+        padding-right: 25vw;
+        max-width: 50vw;
+        z-index: 12;
+    }
+
+ 
+
+
+}
+
+
+@media (max-width: 1180px) {
+
+    #faq{
+        background: linear-gradient(to bottom, white 0%, white 30%, #32111A 30%, #32111A 100%);
+    }
+    #faq-title {
+        font-size: 8rem;
+    }
+
+    .question {
+        font-size: 3rem;
+        margin: 0rem 1rem;
+    }
+
+    #questions {
+        max-width: 75vw;
+    }
+
+    .answer {
+        font-size: 1.5rem;
+        margin: 0rem 1rem;
     }
 }
 
 @media (max-width: 820px) {
     #faq {
         background: white !important; /* Override gradient or maroon */
-        padding: 10vh 0;
     }
 
 
     #questions {
-        margin: 0rem 1rem;
+        margin: 0rem 0rem;
         z-index: 12;
     }
 
@@ -118,7 +158,6 @@
     .question {
         font-size: 4rem;
         line-height: 4rem;
-        padding: 1rem 0;
         width: 100%;
         margin-top: 1rem;
         margin-bottom: 1rem;
@@ -128,7 +167,7 @@
     .answer,
     .answer b {
         font-size: 1.5rem;
-        padding: 1rem 0;
+        margin: 0rem 0rem;
     }
 
 }
