@@ -119,6 +119,13 @@
     }
 }
 
+@media (min-width: 820px) {
+    #faq {
+        margin-bottom: 0;
+        padding-bottom: 5rem;
+    }
+}
+
 @media (max-width: 820px) {
     #faq {
         background: white !important; /* Override gradient or maroon */
