@@ -4,9 +4,13 @@ import cseucsd from "../../assets/logos/cseucsd.png";
 import csfe from "../../assets/logos/csfe-logo.svg"
 import sublime from "../../assets/logos/sublime.png";
 import desmos from "../../assets/logos/desmos.png";
-
-
 import janestreet from "../../assets/logos/jane_street.png";
+import teradata from "../../assets/logos/teradata.png"
+import melissa from "../../assets/logos/melissa.png"
+import northrop from "../../assets/logos/northrop-grumman-white.png"
+
+
+
 import React from 'react';
 
 const Sponsors = () => {
@@ -22,8 +26,7 @@ const Sponsors = () => {
           <img src={cseucsd} alt="UCSD CSE"></img>
         </a>
       
-  
-        <a href="/" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.sublimetext.com/" target="_blank" rel="noopener noreferrer">
           <img src={sublime} alt="Sublime"></img>
         </a>
         <a href="https://desmos.com" target="_blank" rel="noopener noreferrer">
@@ -31,7 +34,19 @@ const Sponsors = () => {
         </a>
         
          <a href="https://www.janestreet.com" target="_blank" rel="noopener noreferrer">
-          <img src={janestreet} alt="Jane Street"></img>
+          <img src={janestreet} alt="Jane Street"></img> 
+        </a>
+
+        <a href="https://www.melissa.com" target="_blank" rel="noopener noreferrer">
+          <img src={melissa} alt="Melissa"></img> 
+        </a>
+
+        <a href="https://www.teradata.com/" target="_blank" rel="noopener noreferrer">
+          <img src={teradata} alt="Teradata"></img> 
+        </a>
+
+        <a href="https://www.northropgrumman.com/" target="_blank" rel="noopener noreferrer">
+          <img src={northrop} alt="Northrop Grumman"></img> 
         </a>
         
       </div>
