@@ -59,9 +59,9 @@ a {
   transition: transform 0.2s ease; /* smooth animation */
 }
 
-.enlarge-text:hover {
+/* .enlarge-text:hover {
   transform: scale(1.05); /* slightly enlarge by 5% */
-}
+} */
 
 /* img {
   -webkit-user-drag: none;
